@@ -3,8 +3,8 @@
 ![GitHub Followers](https://img.shields.io/github/followers/ddc?style=plastic&label=Followers&color=brightgreen&logo=github&logoColor=white)
 ![GitHub Stars](https://img.shields.io/github/stars/ddc?style=plastic&label=Stars&color=ffff00&logo=github&logoColor=white)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-danieldcsta-%230077B5.svg?style=plastic&logo=linkedin&color=0A66C2)](https://www.linkedin.com/in/danieldcsta)
-[![Protonmail](https://img.shields.io/badge/E--Mail-daniel%40ddcsoftwares.com-8A2BE2?style=plastic&logo=protonmail&color=8A2BE2)](mailto:daniel@ddcsoftwares.com)
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&style=plastic&color=ff69b4)](https://github.com/sponsors/ddc)
+[![Protonmail](https://img.shields.io/badge/E--Mail-daniel%40ddcsoftwares.com-8A2BE2?style=plastic&logo=protonmail&color=8A2BE2)](mailto:daniel@ddcsoftwares.com)
 
 <!--
 <div>
