@@ -15,7 +15,7 @@
 <br/>
 -->
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ddc&theme=chartreuse-dark&hide_border=true&card_width=800&card_height=200)](https://github.com/ddc)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ddc&theme=chartreuse-dark&hide_border=true&mode=weekly&card_width=800&card_height=200)](https://github.com/ddc)
 ![Stats](./profile/stats.svg)
 ![Top Languages](./profile/top-langs.svg)
 [![wakatime stats](./profile/wakatime.svg)](https://wakatime.com/@ddc)
