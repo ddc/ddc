@@ -108,7 +108,7 @@ jobs:
           card: gist
           options: id=1c2d19f1c932de07f26dc1f02e0ee3ec&theme=chartreuse-dark&hide_border=true
           path: profile/raspfan.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
 
       - name: Commit cards
         run: |
