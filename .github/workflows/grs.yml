@@ -87,6 +87,14 @@ jobs:
           path: profile/802_11ad.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate raspfan.py gist card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: gist
+          options: id=1c2d19f1c932de07f26dc1f02e0ee3ec
+          path: profile/raspfan.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
