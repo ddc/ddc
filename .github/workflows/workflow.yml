@@ -15,6 +15,22 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Generate streak stats card
+        run: |
+          mkdir -p profile
+          git clone --depth 1 https://github.com/DenverCoder1/github-readme-streak-stats.git /tmp/streak-stats
+          docker build -t streak-stats /tmp/streak-stats
+          docker run -d --name streak -p 8080:80 \
+            -e TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            streak-stats
+          for i in $(seq 1 30); do
+            curl -s -o /dev/null http://localhost:8080/ && break
+            sleep 1
+          done
+          curl -s -o profile/streak.svg \
+            "http://localhost:8080/?user=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&mode=weekly&card_width=800&card_height=200"
+          docker stop streak
+          
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
