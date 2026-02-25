@@ -102,6 +102,14 @@ jobs:
           path: profile/802_11ad.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate post_install_os pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=post-install-os&theme=chartreuse-dark&hide_border=true
+          path: profile/post_install_os.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate raspfan.py gist card
         uses: readme-tools/github-readme-stats-action@v1
         with:
