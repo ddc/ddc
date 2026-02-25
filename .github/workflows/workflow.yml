@@ -1,4 +1,4 @@
-name: Update README cards
+name: Update Profile cards
 
 on:
   schedule:
