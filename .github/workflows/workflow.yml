@@ -91,7 +91,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: gist
-          options: api/gist?id=1c2d19f1c932de07f26dc1f02e0ee3ec
+          options: id=1c2d19f1c932de07f26dc1f02e0ee3ec&theme=chartreuse-dark
           path: profile/raspfan.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
