@@ -28,5 +28,5 @@
 [![ReshadeUtils card](./profile/ReshadeUtils.svg)](https://github.com/ddc/ReshadeUtils)
 [![Gw2Launcher card](./profile/Gw2Launcher.svg)](https://github.com/ddc/Gw2Launcher)
 [![802_11ad card](./profile/802_11ad.svg)](https://github.com/ddc/802.11ad)
-
+[![post_install_os](./profile/post_install_os.svg)](https://github.com/ddc/post-install-os)
 [![raspfan gist card](./profile/raspfan.svg)](https://gist.github.com/ddc/1c2d19f1c932de07f26dc1f02e0ee3ec)
