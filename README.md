@@ -6,7 +6,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-danieldcsta-%230077B5.svg?style=plastic&logo=linkedin&color=0A66C2)](https://www.linkedin.com/in/danieldcsta)
 [![Protonmail](https://img.shields.io/badge/E--Mail-daniel%40ddcsoftwares.com-8A2BE2?style=plastic&logo=protonmail&color=8A2BE2)](mailto:daniel@ddcsoftwares.com)
 
-
 <!--
 <div>
     <img align="left" alt="Waving" width="36px" src="https://cdn.icon-icons.com/icons2/1465/PNG/512/384wavinghand2_100598.png"/>
@@ -14,18 +13,12 @@
 <div/>
 <br/>
 <br/>
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=ddc&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
-[![trophy](https://github-profile-trophy-fork-two.vercel.app/?username=ddc&theme=juicyfresh)](https://github.com/ryo-ma/github-profile-trophy)
 -->
 
-<div>
-
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ddc&theme=chartreuse-dark&hide_border=true&card_width=800&card_height=200)](https://github.com/ddc)
 ![Stats](./profile/stats.svg)
 ![Top Languages](./profile/top-langs.svg)
 [![wakatime stats](./profile/wakatime.svg)](https://wakatime.com/@ddc)
-
-<div/>
 
 [![pythonLogs card](./profile/pythonLogs.svg)](https://github.com/ddc/pythonLogs)
 [![ddcDatabases card](./profile/ddcDatabases.svg)](https://github.com/ddc/ddcDatabases)
@@ -34,4 +27,6 @@
 [![Gw2Launcher card](./profile/Gw2Launcher.svg)](https://github.com/ddc/Gw2Launcher)
 [![802_11ad card](./profile/802_11ad.svg)](https://github.com/ddc/802.11ad)
 
+<!--
 [![raspfan gist card](./profile/raspfan.svg)](https://gist.github.com/ddc/1c2d19f1c932de07f26dc1f02e0ee3ec)
+-->
