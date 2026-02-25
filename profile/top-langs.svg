@@ -1,8 +1,8 @@
 
       <svg
-        width="300"
-        height="190"
-        viewBox="0 0 300 190"
+        width="800"
+        height="485"
+        viewBox="0 0 800 485"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -92,9 +92,9 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="299"
+          width="799"
           fill="#000"
-          stroke-opacity="1"
+          stroke-opacity="0"
         />
 
         
@@ -119,153 +119,197 @@
         >
           
     <svg data-testid="lang-items" x="25">
-      
-  
-      <mask id="rect-mask">
-          <rect x="0" y="0" width="250" height="8" fill="white" rx="5"/>
-        </mask>
-        
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="0"
-          y="0"
-          width="150.89"
-          height="8"
-          fill="#f34b7d"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="150.89"
-          y="0"
-          width="96.29"
-          height="8"
-          fill="#3572A5"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="247.18"
-          y="0"
-          width="11.44"
-          height="8"
-          fill="#555555"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="248.62"
-          y="0"
-          width="10.62"
-          height="8"
-          fill="#0298c3"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="249.24"
-          y="0"
-          width="10.45"
-          height="8"
-          fill="#89e051"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="249.69"
-          y="0"
-          width="10.2"
-          height="8"
-          fill="#427819"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="249.89"
-          y="0"
-          width="10.08"
-          height="8"
-          fill="#e16737"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="249.97"
-          y="0"
-          width="10.04"
-          height="8"
-          fill="#E4E6F3"
-        />
-      
-      
-    <g transform="translate(0, 25)">
-      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
+      <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#f34b7d" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        C++ 60.35%
-      </text>
-    </g>
-  </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 38.52%
-      </text>
-    </g>
-  </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#555555" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        C 0.58%
-      </text>
-    </g>
-  </g><g transform="translate(0, 75)">
-    <g class="stagger" style="animation-delay: 900ms">
-      <circle cx="5" cy="6" r="5" fill="#0298c3" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Perl 0.25%
-      </text>
-    </g>
-  </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#89e051" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Shell 0.18%
-      </text>
-    </g>
-  </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#427819" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Makefile 0.08%
-      </text>
-    </g>
-  </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#e16737" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        MATLAB 0.03%
-      </text>
-    </g>
-  </g><g transform="translate(0, 75)">
-    <g class="stagger" style="animation-delay: 900ms">
-      <circle cx="5" cy="6" r="5" fill="#E4E6F3" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Click 0.02%
-      </text>
-    </g>
-  </g></g>
-    </g>
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">C++</text>
+      <text x="715" y="34" class="lang-name">60.34%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="60.34336856885913%">
+        <rect
+            height="8"
+            fill="#f34b7d"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 750ms;"
+        />
+      </svg>
+    </svg>
   
+    </g>
+  </g><g transform="translate(0, 40)">
+    <g class="stagger" style="animation-delay: 600ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Python</text>
+      <text x="715" y="34" class="lang-name">38.51%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="38.50916009130914%">
+        <rect
+            height="8"
+            fill="#3572A5"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 900ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 80)">
+    <g class="stagger" style="animation-delay: 750ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">C</text>
+      <text x="715" y="34" class="lang-name">0.58%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#555555"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1050ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 120)">
+    <g class="stagger" style="animation-delay: 900ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Perl</text>
+      <text x="715" y="34" class="lang-name">0.25%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#0298c3"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1200ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 160)">
+    <g class="stagger" style="animation-delay: 1050ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Shell</text>
+      <text x="715" y="34" class="lang-name">0.18%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#89e051"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1350ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 200)">
+    <g class="stagger" style="animation-delay: 1200ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Makefile</text>
+      <text x="715" y="34" class="lang-name">0.08%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#427819"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1500ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 240)">
+    <g class="stagger" style="animation-delay: 1350ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">MATLAB</text>
+      <text x="715" y="34" class="lang-name">0.03%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#e16737"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1650ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 280)">
+    <g class="stagger" style="animation-delay: 1500ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Click</text>
+      <text x="715" y="34" class="lang-name">0.02%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#E4E6F3"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1800ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 320)">
+    <g class="stagger" style="animation-delay: 1650ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Gnuplot</text>
+      <text x="715" y="34" class="lang-name">0.01%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#f0a9f0"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 1950ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g><g transform="translate(0, 360)">
+    <g class="stagger" style="animation-delay: 1800ms">
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">QMake</text>
+      <text x="715" y="34" class="lang-name">0.01%</text>
+      
+    <svg width="705" x="0" y="25">
+      <rect rx="5" ry="5" x="0" y="0" width="705" height="8" fill="#ddd"></rect>
+      <svg data-testid="lang-progress" width="2%">
+        <rect
+            height="8"
+            fill="#858585"
+            rx="5" ry="5" x="0" y="0"
+            class="lang-progress"
+            style="animation-delay: 2100ms;"
+        />
+      </svg>
+    </svg>
+  
+    </g>
+  </g>
     </svg>
   
         </g>
