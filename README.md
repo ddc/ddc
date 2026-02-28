@@ -30,3 +30,5 @@
 [![802_11ad card](./profile/802_11ad.svg)](https://github.com/ddc/802.11ad)
 [![post_install_os](./profile/post_install_os.svg)](https://github.com/ddc/post-install-os)
 [![raspfan gist card](./profile/raspfan.svg)](https://gist.github.com/ddc/1c2d19f1c932de07f26dc1f02e0ee3ec)
+[![ddcMacTahoeKde](./profile/ddc_mac_tahoe_kde.svg)](https://github.com/ddc/ddcMacTahoeKde)
+[![ddcTheme](./profile/ddc_theme.svg)](https://github.com/ddc/ddcTheme)
