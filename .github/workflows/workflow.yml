@@ -148,6 +148,24 @@ jobs:
           path: profile/raspfan.svg
           token: ${{ secrets.GH_PAT }}
 
+      - name: Generate ddcMacTahoeKde pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=ddcMacTahoeKde&theme=chartreuse-dark&hide_border=true
+          path: profile/ddc_mac_tahoe_kde.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate ddcTheme pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=ddcTheme&theme=chartreuse-dark&hide_border=true
+          path: profile/ddc_theme.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
