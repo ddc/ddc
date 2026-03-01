@@ -21,7 +21,7 @@
     <br><br>
 </p>
 
-[![Hexagon Stats](assets/hexagon-stats.svg)](https://github.com/ddc)
+<a href="https://github.com/ddc"><img src="assets/hexagon-stats.svg" alt="Hexagon Stats" width="800"></a>
 [![Streak](assets/streak.svg)](https://github.com/ddc)
 [![Stats](assets/stats.svg)](https://github.com/ddc)
 [![Top Languages](assets/top-langs.svg)](https://github.com/ddc)

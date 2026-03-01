@@ -39,7 +39,7 @@ jobs:
         continue-on-error: true
         run: |
           curl -sf -L -o assets/hexagon-stats.svg "https://stats.hyo.dev/api/github-stats?login=${{ github.repository_owner }}"
-          sed -i 's/#26272D/#000/g; s/stroke:url(#backgroundInnerLineGradient)/stroke:none/g; s/#FFFFFF/#7fff00/g; s/Designed by hyochan//; s/viewBox="0 0 350 144"/width="800" viewBox="0 0 350 144"/' assets/hexagon-stats.svg
+          sed -i 's/#26272D/#000/g; s/stroke:url(#backgroundInnerLineGradient)/stroke:none/g; s/#FFFFFF/#7fff00/g; s/Designed by hyochan//' assets/hexagon-stats.svg
 
       - name: Generate other stats cards
         continue-on-error: true
