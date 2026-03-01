@@ -13,9 +13,9 @@
 
 [![pythonLogs](assets/pythonLogs.svg)](https://github.com/ddc/pythonLogs)
 [![ddcDatabases](assets/ddcDatabases.svg)](https://github.com/ddc/ddcDatabases)
-[![DiscordBot](assets/DiscordBot.svg)](https://github.com/ddc/DiscordBot)
 [![ddcMacTahoeKde](assets/ddc_mac_tahoe_kde.svg)](https://github.com/ddc/ddcMacTahoeKde)
 [![ddcTheme](assets/ddc_theme.svg)](https://github.com/ddc/ddcTheme)
+[![DiscordBot](assets/DiscordBot.svg)](https://github.com/ddc/DiscordBot)
 [![ReshadeUtils](assets/ReshadeUtils.svg)](https://github.com/ddc/ReshadeUtils)
 [![Gw2Launcher](assets/Gw2Launcher.svg)](https://github.com/ddc/Gw2Launcher)
 [![802_11ad](assets/802_11ad.svg)](https://github.com/ddc/802.11ad)
