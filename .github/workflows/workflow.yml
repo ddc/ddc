@@ -26,17 +26,19 @@ jobs:
             fi
             docker build -t streak-stats /tmp/streak-stats
             docker rm -f streak 2>/dev/null || true
-            docker run -d --name streak -p 8080:80 \
-              -e TOKEN=${{ secrets.GITHUB_TOKEN }} \
-              streak-stats
+            docker run -d --name streak -p 8080:80 -e TOKEN=${{ secrets.GITHUB_TOKEN }} streak-stats
             for i in $(seq 1 30); do
               curl -s -o /dev/null http://localhost:8080/ && break
               sleep 1
             done
-            curl -sf -o assets/streak.svg \
-              "http://localhost:8080/?user=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&mode=weekly&card_width=800&card_height=200"
+            curl -sf -o assets/streak.svg "http://localhost:8080/?user=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&mode=weekly&card_width=800&card_height=200"
             docker stop streak
             docker rm streak
+
+      - name: Generate hexagon stats card
+        continue-on-error: true
+        run: |
+          curl -sf -L -o assets/hexagon-stats.svg "https://stats.hyo.dev/api/github-stats?login=${{ github.repository_owner }}"
 
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
