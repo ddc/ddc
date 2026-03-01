@@ -19,9 +19,9 @@ jobs:
           FOLLOWERS=$(echo "$DATA" | jq '.followers')
           PUBLIC_REPOS=$(echo "$DATA" | jq '.public_repos')
           STARS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/users/${{ github.repository_owner }}/repos?per_page=100&type=owner" | jq '[.[].stargazers_count] | add // 0')
-          curl -s -o profile/followers.svg "https://img.shields.io/badge/Followers-${FOLLOWERS}-brightgreen?style=plastic&logo=github&logoColor=white"
-          curl -s -o profile/public_repos.svg "https://img.shields.io/badge/Public%20Repos-${PUBLIC_REPOS}-brightgreen?style=plastic&logo=github&logoColor=white"
-          curl -s -o profile/stars.svg "https://img.shields.io/badge/Stars-${STARS}-ffff00?style=plastic&logo=github&logoColor=white"
+          curl -s -o assets/followers.svg "https://img.shields.io/badge/Followers-${FOLLOWERS}-brightgreen?style=plastic&logo=github&logoColor=white"
+          curl -s -o assets/public_repos.svg "https://img.shields.io/badge/Public%20Repos-${PUBLIC_REPOS}-brightgreen?style=plastic&logo=github&logoColor=white"
+          curl -s -o assets/stars.svg "https://img.shields.io/badge/Stars-${STARS}-ffff00?style=plastic&logo=github&logoColor=white"
             
       - name: Generate streak stats card
         uses: nick-fields/retry@v3
@@ -43,10 +43,19 @@ jobs:
               curl -s -o /dev/null http://localhost:8080/ && break
               sleep 1
             done
-            curl -sf -o profile/streak.svg \
+            curl -sf -o assets/streak.svg \
               "http://localhost:8080/?user=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&mode=weekly&card_width=800&card_height=200"
             docker stop streak
             docker rm streak
+
+      - name: Generate github stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        continue-on-error: true
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=radical&show_owner=true&count_private=false
+          path: assets/github_stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
@@ -54,7 +63,7 @@ jobs:
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=chartreuse-dark&hide_border=true&card_width=800&include_all_commits=true&count_private=true
-          path: profile/stats.svg
+          path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # layout: normal, compact, donut, donut-vertical, pie
@@ -64,7 +73,7 @@ jobs:
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&card_width=800&layout=normal&langs_count=10
-          path: profile/top-langs.svg
+          path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate wakatime card
@@ -73,7 +82,7 @@ jobs:
         with:
           card: wakatime
           options: username=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&card_width=800&card_height=1000
-          path: profile/wakatime.svg
+          path: assets/wakatime.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pythonLogs pin card
@@ -82,7 +91,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=pythonLogs&theme=chartreuse-dark&hide_border=true
-          path: profile/pythonLogs.svg
+          path: assets/pythonLogs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate ddcDatabases pin card
@@ -91,7 +100,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=ddcDatabases&theme=chartreuse-dark&hide_border=true
-          path: profile/ddcDatabases.svg
+          path: assets/ddcDatabases.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate DiscordBot pin card
@@ -100,7 +109,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=DiscordBot&theme=chartreuse-dark&hide_border=true
-          path: profile/DiscordBot.svg
+          path: assets/DiscordBot.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate ReshadeUtils pin card
@@ -109,7 +118,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=ReshadeUtils&theme=chartreuse-dark&hide_border=true
-          path: profile/ReshadeUtils.svg
+          path: assets/ReshadeUtils.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Gw2Launcher pin card
@@ -118,7 +127,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=Gw2Launcher&theme=chartreuse-dark&hide_border=true
-          path: profile/Gw2Launcher.svg
+          path: assets/Gw2Launcher.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate 802.11ad pin card
@@ -127,7 +136,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=802.11ad&theme=chartreuse-dark&hide_border=true
-          path: profile/802_11ad.svg
+          path: assets/802_11ad.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate post_install_os pin card
@@ -136,7 +145,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=post-install-os&theme=chartreuse-dark&hide_border=true
-          path: profile/post_install_os.svg
+          path: assets/post_install_os.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate raspfan.py gist card
@@ -145,7 +154,7 @@ jobs:
         with:
           card: gist
           options: id=1c2d19f1c932de07f26dc1f02e0ee3ec&theme=chartreuse-dark&hide_border=true
-          path: profile/raspfan.svg
+          path: assets/raspfan.svg
           token: ${{ secrets.GH_PAT }}
 
       - name: Generate ddcMacTahoeKde pin card
@@ -154,7 +163,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=ddcMacTahoeKde&theme=chartreuse-dark&hide_border=true
-          path: profile/ddc_mac_tahoe_kde.svg
+          path: assets/ddc_mac_tahoe_kde.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate ddcTheme pin card
@@ -163,7 +172,7 @@ jobs:
         with:
           card: pin
           options: username=${{ github.repository_owner }}&repo=ddcTheme&theme=chartreuse-dark&hide_border=true
-          path: profile/ddc_theme.svg
+          path: assets/ddc_theme.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Commit cards
@@ -173,6 +182,6 @@ jobs:
           git stash --include-untracked
           git pull --rebase
           git stash pop
-          git add profile/*.svg
+          git add assets/*.svg
           git commit -m "Update README cards" || exit 0
           git push

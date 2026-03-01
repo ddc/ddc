@@ -1,34 +1,25 @@
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&style=plastic&color=ff69b4)](https://github.com/sponsors/ddc)
 [![Profile views](https://komarev.com/ghpvc/?style=plastic&abbreviated=true&color=brightgreen&username=ddc)](https://github.com/ddc)
-[![Public Repos](./profile/public_repos.svg)](https://github.com/ddc?tab=repositories)
-[![GitHub Followers](./profile/followers.svg)](https://github.com/ddc)
-[![GitHub Stars](./profile/stars.svg)](https://github.com/ddc)
+[![Public Repos](./assets/public_repos.svg)](https://github.com/ddc?tab=repositories)
+[![GitHub Followers](./assets/followers.svg)](https://github.com/ddc)
+[![GitHub Stars](./assets/stars.svg)](https://github.com/ddc)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-danieldcsta-%230077B5.svg?style=plastic&logo=linkedin&color=0A66C2)](https://www.linkedin.com/in/danieldcsta)
 [![Protonmail](https://img.shields.io/badge/E--Mail-daniel%40ddcsoftwares.com-8A2BE2?style=plastic&logo=protonmail&color=8A2BE2)](mailto:daniel@ddcsoftwares.com)
 
-<!--
-<br/>
-<br/>
-<div>
-    <img align="left" alt="Waving" width="36px" src="https://cdn.icon-icons.com/icons2/1465/PNG/512/384wavinghand2_100598.png"/>
-    <img align="left" alt="Mask-Covid19" width="36px" src="https://cdn.icon-icons.com/icons2/2252/PNG/512/avatar_man_health_mask_disease_icon_140104.png"/>
-<div/>
-<br/>
-<br/>
--->
+[![Daniel's github stats](./assets/github_stats.svg)](https://github.com/ddc)
 
-[![Streak](./profile/streak.svg)](https://github.com/ddc)
-[![Stats](./profile/stats.svg)](https://github.com/ddc)
-[![Top Languages](./profile/top-langs.svg)](https://github.com/ddc)
-[![Wakatime](./profile/wakatime.svg)](https://wakatime.com/@ddc)
+[![Streak](./assets/streak.svg)](https://github.com/ddc)
+[![Stats](./assets/stats.svg)](https://github.com/ddc)
+[![Top Languages](./assets/top-langs.svg)](https://github.com/ddc)
+[![Wakatime](./assets/wakatime.svg)](https://wakatime.com/@ddc)
 
-[![pythonLogs card](./profile/pythonLogs.svg)](https://github.com/ddc/pythonLogs)
-[![ddcDatabases card](./profile/ddcDatabases.svg)](https://github.com/ddc/ddcDatabases)
-[![DiscordBot card](./profile/DiscordBot.svg)](https://github.com/ddc/DiscordBot)
-[![ReshadeUtils card](./profile/ReshadeUtils.svg)](https://github.com/ddc/ReshadeUtils)
-[![Gw2Launcher card](./profile/Gw2Launcher.svg)](https://github.com/ddc/Gw2Launcher)
-[![802_11ad card](./profile/802_11ad.svg)](https://github.com/ddc/802.11ad)
-[![post_install_os](./profile/post_install_os.svg)](https://github.com/ddc/post-install-os)
-[![raspfan gist card](./profile/raspfan.svg)](https://gist.github.com/ddc/1c2d19f1c932de07f26dc1f02e0ee3ec)
-[![ddcMacTahoeKde](./profile/ddc_mac_tahoe_kde.svg)](https://github.com/ddc/ddcMacTahoeKde)
-[![ddcTheme](./profile/ddc_theme.svg)](https://github.com/ddc/ddcTheme)
+[![pythonLogs card](./assets/pythonLogs.svg)](https://github.com/ddc/pythonLogs)
+[![ddcDatabases card](./assets/ddcDatabases.svg)](https://github.com/ddc/ddcDatabases)
+[![DiscordBot card](./assets/DiscordBot.svg)](https://github.com/ddc/DiscordBot)
+[![ReshadeUtils card](./assets/ReshadeUtils.svg)](https://github.com/ddc/ReshadeUtils)
+[![Gw2Launcher card](./assets/Gw2Launcher.svg)](https://github.com/ddc/Gw2Launcher)
+[![802_11ad card](./assets/802_11ad.svg)](https://github.com/ddc/802.11ad)
+[![post_install_os](./assets/post_install_os.svg)](https://github.com/ddc/post-install-os)
+[![raspfan gist card](./assets/raspfan.svg)](https://gist.github.com/ddc/1c2d19f1c932de07f26dc1f02e0ee3ec)
+[![ddcMacTahoeKde](./assets/ddc_mac_tahoe_kde.svg)](https://github.com/ddc/ddcMacTahoeKde)
+[![ddcTheme](./assets/ddc_theme.svg)](https://github.com/ddc/ddcTheme)
