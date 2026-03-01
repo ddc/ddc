@@ -3,30 +3,30 @@
   <style type="text/css">
     <![CDATA[
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=block");
-    .backgroundColor{fill:#26272D;}
-    .backgroundColorLine{stroke:#26272D;}
+    .backgroundColor{fill:#000;}
+    .backgroundColorLine{stroke:#000;}
     .backgroundInnerLineOpacity{opacity:1;}
-    .statsBaseLineStyle{fill:none; stroke:#FFFFFF; stroke-width:0.5; opacity:0.2;}
-    .statsBaseIconStyle{fill:#FFFFFF; opacity:0.2;}
-    .currentStatsShapeStyle{opacity:0.8; stroke:#FFFFFF; stroke-width:1;}
-    .currentStatsLoadingStyle{opacity:0.8; stroke:#FFFFFF; stroke-width:1;}
-    .textGithubIDStyle{font-family: "Inter", Sans-Serif;font-weight: 700;font-size: 12px; color: #FFFFFF;}
-    .textCurrentAverageStyle{font-family: "Inter", Sans-Serif;font-weight: 700;font-size: 12px; fill: #FFFFFF;}
-    .textCurrentStatsNumberStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 9px; fill: #FFFFFF;}
+    .statsBaseLineStyle{fill:none; stroke:#7fff00; stroke-width:0.5; opacity:0.2;}
+    .statsBaseIconStyle{fill:#7fff00; opacity:0.2;}
+    .currentStatsShapeStyle{opacity:0.8; stroke:#7fff00; stroke-width:1;}
+    .currentStatsLoadingStyle{opacity:0.8; stroke:#7fff00; stroke-width:1;}
+    .textGithubIDStyle{font-family: "Inter", Sans-Serif;font-weight: 700;font-size: 12px; color: #7fff00;}
+    .textCurrentAverageStyle{font-family: "Inter", Sans-Serif;font-weight: 700;font-size: 12px; fill: #7fff00;}
+    .textCurrentStatsNumberStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 9px; fill: #7fff00;}
     .textSubtitleStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 12px; color: #646569;}
-    .textLabelStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #FFFFFF; }
-    .textLabelSubStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #FFFFFF; opacity:0.5;}
-    .textInfoStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 7px; fill: #FFFFFF; opacity:0.3;}
-    .textLangLabelStyle{fill: #FFFFFF; opacity:0.3; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 7px;}
-    .textLangStyle{margin-right: 8px; color:  #FFFFFF; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
-    .textLangDot1{margin-right: 8px; color:  #FFFFFF; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
+    .textLabelStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #7fff00; }
+    .textLabelSubStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 10px; fill: #7fff00; opacity:0.5;}
+    .textInfoStyle{font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 7px; fill: #7fff00; opacity:0.3;}
+    .textLangLabelStyle{fill: #7fff00; opacity:0.3; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 7px;}
+    .textLangStyle{margin-right: 8px; color:  #7fff00; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
+    .textLangDot1{margin-right: 8px; color:  #7fff00; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
     .textLangDot2{margin-right: 8px; color:  #96979B; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
     .textLangDot3{margin-right: 8px; color:  #6F7073; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
     .textLangDot4{margin-right: 8px; color:  #4D4E51; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
     .textLangDot5{margin-right: 8px; color:  #3D3D41; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
     .textLangDot6{margin-right: 8px; color:  #36363A; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px;}
     .textLangPercent{margin-right: 8px; color: #646569; font-family: "Inter", Sans-Serif;font-weight: 300;font-size: 14px; }
-    .langType1{fill: #FFFFFF; }
+    .langType1{fill: #7fff00; }
     .langType2{fill: #6F7073;}
     .langType3{fill: #4D4E51;}
     .langType4{fill: #3D3D41;}
@@ -38,7 +38,7 @@
   </style>
   <g id="background">
     <rect id="backgroundBox" width="350" height="144" rx="8" class = "backgroundColor"/>
-    <rect x="4.5" y="4.5" width="341" height="135" rx="7.5" style="fill:none;stroke:url(#backgroundInnerLineGradient);stroke-width:0.5;stroke-miterlimit:10;"/>
+    <rect x="4.5" y="4.5" width="341" height="135" rx="7.5" style="fill:none;stroke:none;stroke-width:0.5;stroke-miterlimit:10;"/>
     <linearGradient id="backgroundInnerLineGradient" gradientUnits="userSpaceOnUse" x1="3.75" y1="100" x2="346.25" y2="100">
       <stop offset="0" style="stop-color:#AE7BFA"/>
       <stop offset="0.5219" style="stop-color:#6489E7"/>
@@ -267,7 +267,7 @@
     <text x="152" y="86" class="textLabelSubStyle">Tier</text>
   </g>
   <g id="doobooText" opacity="0">
-    <a href="https://stats.hyo.dev" target="_blank"><text id="textInfo" x="24" y="124" class="textInfoStyle">Designed by hyochan</text></a>
+    <a href="https://stats.hyo.dev" target="_blank"><text id="textInfo" x="24" y="124" class="textInfoStyle"></text></a>
   </g>
   <!-- START of Animation -->
   <!-- Hexagon Base Animation -->
@@ -278,7 +278,7 @@
   <animate begin="0.00s" xlink:href="#userNameText" attributeName="opacity" attributeType="XML" dur="0.5s" fill="freeze" from="0" to="1"/>
   <animate begin="0.00s" xlink:href="#titleText" attributeName="opacity" attributeType="XML" dur="0.8s" fill="freeze" from="0" to="1"/>
   <!-- Hexagon Morphing Animation -->
-  <animate begin="1.50s" xlink:href="#currentStats" attributeName="points" attributeType="XML" dur="0.5s" fill="freeze" to="278,60.75 284.51,68.25 288.6311,78.125 278,92.25 271.49,75.75 271.49,68.25"/>
+  <animate begin="1.50s" xlink:href="#currentStats" attributeName="points" attributeType="XML" dur="0.5s" fill="freeze" to="278,60.775658998242044 284.57157633678435,68.21451340664802 288.7211655318749,78.17690498609662 278,92.16522363158725 271.49,75.75 271.49,68.25"/>
   <animate begin="1.60s" xlink:href="#currentStatsShapeLoading" attributeName="opacity" attributeType="XML" dur="0.4s" fill="freeze" from="1" to="0"/>
   <!-- 6 Stats Animation -->
   <animate begin="1.50s" xlink:href="#statsBaseIcons" attributeName="opacity" attributeType="XML" dur="0.2s" fill="freeze" from="0" to="1"/>

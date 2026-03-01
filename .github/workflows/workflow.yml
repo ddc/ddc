@@ -39,125 +39,45 @@ jobs:
         continue-on-error: true
         run: |
           curl -sf -L -o assets/hexagon-stats.svg "https://stats.hyo.dev/api/github-stats?login=${{ github.repository_owner }}"
+          sed -i 's/#26272D/#000/g; s/stroke:url(#backgroundInnerLineGradient)/stroke:none/g; s/#FFFFFF/#7fff00/g; s/textInfoStyle">/textInfoStyle" fill="#000">/' assets/hexagon-stats.svg
 
-      - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
+      - name: Generate other stats cards
         continue-on-error: true
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=chartreuse-dark&hide_border=true&card_width=800&include_all_commits=true&count_private=true
-          path: assets/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          BASE: "https://github-readme-stats.vercel.app"
+        run: |
+          OWNER="${{ github.repository_owner }}"
+          THEME="chartreuse-dark"
 
-      # layout: normal, compact, donut, donut-vertical, pie
-      - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&card_width=800&layout=normal&langs_count=10
-          path: assets/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Stats cards
+          curl -sf --retry 3 -o assets/stats.svg "${BASE}/api?username=${OWNER}&show_icons=true&theme=${THEME}&hide_border=true&card_width=800&include_all_commits=true&count_private=true" || true
 
-      - name: Generate wakatime card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: wakatime
-          options: username=${{ github.repository_owner }}&theme=chartreuse-dark&hide_border=true&card_width=800&card_height=1000
-          path: assets/wakatime.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Top languages card
+          curl -sf --retry 3 -o assets/top-langs.svg "${BASE}/api/top-langs?username=${OWNER}&theme=${THEME}&hide_border=true&card_width=800&layout=normal&langs_count=10" || true
 
-      - name: Generate pythonLogs pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=pythonLogs&theme=chartreuse-dark&hide_border=true
-          path: assets/pythonLogs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Wakatime card
+          curl -sf --retry 3 -o assets/wakatime.svg "${BASE}/api/wakatime?username=${OWNER}&theme=${THEME}&hide_border=true&card_width=800&card_height=1000" || true
 
-      - name: Generate ddcDatabases pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=ddcDatabases&theme=chartreuse-dark&hide_border=true
-          path: assets/ddcDatabases.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Pin cards
+          declare -A PINS=(
+            ["pythonLogs"]="pythonLogs"
+            ["ddcDatabases"]="ddcDatabases"
+            ["DiscordBot"]="DiscordBot"
+            ["ReshadeUtils"]="ReshadeUtils"
+            ["Gw2Launcher"]="Gw2Launcher"
+            ["802_11ad"]="802.11ad"
+            ["post_install_os"]="post-install-os"
+            ["ddc_mac_tahoe_kde"]="ddcMacTahoeKde"
+            ["ddc_theme"]="ddcTheme"
+          )
+          for file in "${!PINS[@]}"; do
+            repo="${PINS[$file]}"
+            curl -sf --retry 3 -o "assets/${file}.svg" "${BASE}/api/pin?username=${OWNER}&repo=${repo}&theme=${THEME}&hide_border=true" || true
+          done
 
-      - name: Generate DiscordBot pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=DiscordBot&theme=chartreuse-dark&hide_border=true
-          path: assets/DiscordBot.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Gist card
+          curl -sf --retry 3 -o assets/raspfan.svg "${BASE}/api/gist?id=1c2d19f1c932de07f26dc1f02e0ee3ec&theme=${THEME}&hide_border=true" || true
 
-      - name: Generate ReshadeUtils pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=ReshadeUtils&theme=chartreuse-dark&hide_border=true
-          path: assets/ReshadeUtils.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate Gw2Launcher pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=Gw2Launcher&theme=chartreuse-dark&hide_border=true
-          path: assets/Gw2Launcher.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate 802.11ad pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=802.11ad&theme=chartreuse-dark&hide_border=true
-          path: assets/802_11ad.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate post_install_os pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=post-install-os&theme=chartreuse-dark&hide_border=true
-          path: assets/post_install_os.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate raspfan.py gist card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: gist
-          options: id=1c2d19f1c932de07f26dc1f02e0ee3ec&theme=chartreuse-dark&hide_border=true
-          path: assets/raspfan.svg
-          token: ${{ secrets.GH_PAT }}
-
-      - name: Generate ddcMacTahoeKde pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=ddcMacTahoeKde&theme=chartreuse-dark&hide_border=true
-          path: assets/ddc_mac_tahoe_kde.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate ddcTheme pin card
-        uses: readme-tools/github-readme-stats-action@v1
-        continue-on-error: true
-        with:
-          card: pin
-          options: username=${{ github.repository_owner }}&repo=ddcTheme&theme=chartreuse-dark&hide_border=true
-          path: assets/ddc_theme.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          
       - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
