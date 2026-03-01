@@ -1,7 +1,7 @@
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&style=plastic&color=ff69b4)](https://github.com/sponsors/ddc)
 [![Profile views](https://komarev.com/ghpvc/?style=plastic&abbreviated=true&color=brightgreen&username=ddc)](https://github.com/ddc)
 [![Public Repos](assets/public_repos.svg)](https://github.com/ddc?tab=repositories)
-[![GitHub Followers](assets/followers.svg)](https://github.com/ddc)
+[![GitHub Followers](assets/followers.svg)](https://github.com/ddc?tab=followers)
 [![GitHub Stars](assets/stars.svg)](https://github.com/ddc)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-danieldcsta-%230077B5.svg?style=plastic&logo=linkedin&color=0A66C2)](https://www.linkedin.com/in/danieldcsta)
 [![Protonmail](https://img.shields.io/badge/E--Mail-daniel%40ddcsoftwares.com-8A2BE2?style=plastic&logo=protonmail&color=8A2BE2)](mailto:daniel@ddcsoftwares.com)
