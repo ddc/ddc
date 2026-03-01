@@ -13,16 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate GitHub badges
-        run: |
-          DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/users/${{ github.repository_owner }})
-          FOLLOWERS=$(echo "$DATA" | jq '.followers')
-          PUBLIC_REPOS=$(echo "$DATA" | jq '.public_repos')
-          STARS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/users/${{ github.repository_owner }}/repos?per_page=100&type=owner" | jq '[.[].stargazers_count] | add // 0')
-          curl -s -o assets/followers.svg "https://img.shields.io/badge/Followers-${FOLLOWERS}-brightgreen?style=plastic&logo=github&logoColor=white"
-          curl -s -o assets/public_repos.svg "https://img.shields.io/badge/Public%20Repos-${PUBLIC_REPOS}-brightgreen?style=plastic&logo=github&logoColor=white"
-          curl -s -o assets/stars.svg "https://img.shields.io/badge/Stars-${STARS}-ffff00?style=plastic&logo=github&logoColor=white"
-            
       - name: Generate streak stats card
         uses: nick-fields/retry@v3
         with:
