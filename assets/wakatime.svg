@@ -126,11 +126,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >5 hrs 9 mins</text>
+      >5 hrs 20 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="24.55%">
+      <svg data-testid="lang-progress" width="27.01%">
         <rect
             height="8"
             fill="#7fff00"
@@ -149,11 +149,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >3 hrs 46 mins</text>
+      >3 hrs 32 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="17.99%">
+      <svg data-testid="lang-progress" width="17.94%">
         <rect
             height="8"
             fill="#7fff00"
@@ -172,11 +172,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >3 hrs 28 mins</text>
+      >3 hrs 8 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="16.54%">
+      <svg data-testid="lang-progress" width="15.87%">
         <rect
             height="8"
             fill="#7fff00"
@@ -195,11 +195,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >2 hrs 1 min</text>
+      >2 hrs 3 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="9.63%">
+      <svg data-testid="lang-progress" width="10.39%">
         <rect
             height="8"
             fill="#7fff00"
@@ -218,11 +218,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >1 hr 23 mins</text>
+      >1 hr 9 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="6.67%">
+      <svg data-testid="lang-progress" width="5.88%">
         <rect
             height="8"
             fill="#7fff00"
@@ -241,11 +241,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >1 hr 1 min</text>
+      >55 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="4.85%">
+      <svg data-testid="lang-progress" width="4.68%">
         <rect
             height="8"
             fill="#7fff00"
@@ -264,11 +264,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >50 mins</text>
+      >49 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="4.02%">
+      <svg data-testid="lang-progress" width="4.2%">
         <rect
             height="8"
             fill="#7fff00"
@@ -287,11 +287,11 @@
         class="stat"
         x="655"
         y="12.5"
-      >49 mins</text>
+      >35 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="3.92%">
+      <svg data-testid="lang-progress" width="3.02%">
         <rect
             height="8"
             fill="#7fff00"
@@ -305,16 +305,16 @@
     </g>
   </g><g transform="translate(0, 200)">
     <g class="stagger" style="animation-delay: 1650ms" transform="translate(25, 0)">
-      <text class="stat bold" y="12.5" data-testid="Shell Script">Shell Script:</text>
+      <text class="stat bold" y="12.5" data-testid="XML">XML:</text>
       <text
         class="stat"
         x="655"
         y="12.5"
-      >37 mins</text>
+      >34 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="2.95%">
+      <svg data-testid="lang-progress" width="2.94%">
         <rect
             height="8"
             fill="#7fff00"
@@ -328,16 +328,16 @@
     </g>
   </g><g transform="translate(0, 225)">
     <g class="stagger" style="animation-delay: 1800ms" transform="translate(25, 0)">
-      <text class="stat bold" y="12.5" data-testid="XML">XML:</text>
+      <text class="stat bold" y="12.5" data-testid="Markdown">Markdown:</text>
       <text
         class="stat"
         x="655"
         y="12.5"
-      >32 mins</text>
+      >27 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="2.6%">
+      <svg data-testid="lang-progress" width="2.29%">
         <rect
             height="8"
             fill="#7fff00"
@@ -351,16 +351,16 @@
     </g>
   </g><g transform="translate(0, 250)">
     <g class="stagger" style="animation-delay: 1950ms" transform="translate(25, 0)">
-      <text class="stat bold" y="12.5" data-testid="Markdown">Markdown:</text>
+      <text class="stat bold" y="12.5" data-testid="Shell Script">Shell Script:</text>
       <text
         class="stat"
         x="655"
         y="12.5"
-      >28 mins</text>
+      >18 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
-      <svg data-testid="lang-progress" width="2.25%">
+      <svg data-testid="lang-progress" width="2%">
         <rect
             height="8"
             fill="#7fff00"
@@ -379,7 +379,7 @@
         class="stat"
         x="655"
         y="12.5"
-      >17 mins</text>
+      >15 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
@@ -448,7 +448,7 @@
         class="stat"
         x="655"
         y="12.5"
-      >6 mins</text>
+      >7 mins</text>
       
     <svg width="525" x="110" y="4">
       <rect rx="5" ry="5" x="0" y="0" width="525" height="8" fill="#fff"></rect>
